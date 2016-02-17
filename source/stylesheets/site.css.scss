@@ -1,10 +1,12 @@
 @charset "utf-8";
 @import "normalize";
 
+$font-stack: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 body {
   background: #ECC561;
   text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-stack;
   font-size: 1em;
 }
 
@@ -15,7 +17,7 @@ body {
 
 h1 {
   color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-stack;
   font-size: 1.8em;
   font-weight: 400;
   margin: 0;
@@ -23,7 +25,7 @@ h1 {
 
 .doc {
   margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-stack;
   font-size: 1.1em;
   font-weight: 300;
 
@@ -43,25 +45,17 @@ h1 {
 }
 
 .welcome {
-  -webkit-animation-name: welcome;
+  -webkit-animation-name: subtle-fade-in;
   -webkit-animation-duration: .9s;
 }
 
-@-webkit-keyframes welcome {
+@-webkit-keyframes subtle-fade-in {
   from {
-    -webkit-transform: scale(0);
+    -webkit-transform: translateY(0.5em);
     opacity: 0;
   }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
   to {
-    -webkit-transform: scale(1);
+    -webkit-transform: translateY(0em);
+    opacity: 1;
   }
 }
