@@ -19,7 +19,7 @@ page '/*.txt', layout: false
 # General configuration
 
 # Use Haml instead of ERB
-set :haml, { :ugly => true, :format => :html5 }
+set :haml, {ugly: true, format: :html5}
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -32,7 +32,7 @@ activate :autoprefixer do |config|
 end
 
 activate :deploy do |deploy|
-  # Use the default remote, origin, and overwrite previous site
+  # Use the default remote (origin) and overwrite previous site
   deploy.deploy_method = :git
   deploy.branch = 'master'
 end
