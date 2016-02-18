@@ -26,6 +26,11 @@ configure :development do
   activate :livereload
 end
 
+activate :autoprefixer do |config|
+  # Don't remove old prefixes; speed up build times
+  config.remove = false
+end
+
 activate :deploy do |deploy|
   # Use the default remote, origin, and overwrite previous site
   deploy.deploy_method = :git
@@ -43,11 +48,11 @@ end
 #   end
 # end
 
-# Build-specific configuration
+# Build-specific configuration (doesn't apply to "middleman serve")
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 end

@@ -45,17 +45,17 @@ h1 {
 }
 
 .welcome {
-  -webkit-animation-name: subtle-fade-in;
-  -webkit-animation-duration: .9s;
+  animation-name: subtle-fade-in;
+  animation-duration: .9s;
 }
 
-@-webkit-keyframes subtle-fade-in {
+@keyframes subtle-fade-in {
   from {
-    -webkit-transform: translateY(0.5em);
+    transform: translateY(0.5em);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0em);
+    transform: translateY(0em);
     opacity: 1;
   }
 }
