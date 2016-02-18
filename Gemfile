@@ -12,3 +12,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
+# Needs to be the latest git version to work with Middleman v4
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'

@@ -26,6 +26,12 @@ configure :development do
   activate :livereload
 end
 
+activate :deploy do |deploy|
+  # Use the default remote, origin, and overwrite previous site
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
+end
+
 ###
 # Helpers
 ###
