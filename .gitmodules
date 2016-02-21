@@ -1,0 +1,3 @@
+[submodule "source/stylesheets/Skeleton-Sass"]
+	path = source/stylesheets/Skeleton-Sass
+	url = https://github.com/WhatsNewSaes/Skeleton-Sass.git
